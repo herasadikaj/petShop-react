@@ -1,0 +1,197 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(170, 165, 165);
+    overflow: auto;
+    position: relative;
+}
+
+#pet-container {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Set to 6 columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.147);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 10px;
+}
+
+.header {
+    background-color: lightblue; /* Change background color for testing */
+    height: 200px; /* Test smaller height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 10px; /* Reduce padding for testing */
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 40px;
+    margin-right: 890px;
+}
+
+.navbar-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+/* search.css */
+/* search.css */
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: 1%; 
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+  }
+  
+/* General Styles for Search */
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: 1%; 
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.search-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 16px;
+    flex: 1; /* Allows input to grow and fill available space */
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    height: 100%; /* Makes button height match the input field */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure that the parent form sets a consistent height for input and button */
+.search-form {
+    height: auto; /* Adjust if necessary */
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    width: 100%; 
+    background-color: rgb(79, 79, 79);
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative; 
+    box-sizing: border-box; 
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    .products-preview .preview img {
+        height: 25rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
