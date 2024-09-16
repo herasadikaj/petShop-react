@@ -28,9 +28,6 @@ search for animals by name.
 • Additionally, the Navbar has a small home icon that redirects the user back to
 the Homepage. User Interaction:
 • Transport Section: Users can explore different transport options by clicking cards, with popups offering additional insights.
- 
- WORK EXPERIENCE
-[ 07/08/2024 – 07/09/2024 ]
 • Animal Pages: Users can view various animal cards, click to see more details in popups, and search for specific animals using the search functionality.
 • Navigation: The intuitive Navbar across the app ensures easy navigation between the homepage, animal pages, and other sections.
 This app provides a visually rich and user-friendly interface for browsing and learning more about the pet store, its transport methods, and various types of pets.
