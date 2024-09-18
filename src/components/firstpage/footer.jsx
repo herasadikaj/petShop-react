@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
-// src/components/Footer.jsx
 import React from 'react';
-import './firstpage.css'; // Ensure the path is correct
+import './firstpage.css'; 
 
 const Footer = () => {
   return (

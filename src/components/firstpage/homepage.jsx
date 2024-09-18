@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-// Homepage.jsx
 import React from 'react';
 import Header from './header';
 import AboutUs from './aboutUs';

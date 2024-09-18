@@ -241,7 +241,7 @@ body, html {
 }
 
 
-/* Modal overlay */
+
 .modal {
     position: fixed;
     top: 0;
@@ -255,7 +255,6 @@ body, html {
     z-index: 1000;
 }
 
-/* Modal content */
 .modal-content {
     background: white;
     padding: 20px;
@@ -266,30 +265,30 @@ body, html {
     position: relative;
 }
 
-/* Modal title */
+
 .modal-content h3 {
     margin: 0 0 10px;
     font-size: 1.5rem;
-    font-weight: normal; /* Ensures the title is not bold */
+    font-weight: normal; 
 }
 
-/* Modal description title */
+
 .modal-content h4 {
     margin: 0 0 10px;
     font-size: 1.2rem;
     font-weight: normal;
     color: black; 
-    font-weight: bold;/* Ensures the description title is not bold */
+    font-weight: bold;
 }
 
-/* Modal description paragraph */
+
 .modal-content p {
     margin: 0 0 20px;
     font-size: 1rem;
-    font-weight: normal; /* Ensures the description text is not bold */
+    font-weight: normal; 
 }
 
-/* Modal close button */
+
 .modal-content .close {
     position: absolute;
     top: 10px;
@@ -305,9 +304,9 @@ body, html {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 h2 {
-    font-size: 2.5rem; /* Adjust the size as needed */
-    font-weight: normal; /* Ensures the text is not bold */
-    color: black; /* You can adjust the color if needed */
+    font-size: 2.5rem; 
+    font-weight: normal; 
+    color: black; 
 }
 
 footer {
