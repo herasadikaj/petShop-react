@@ -13,39 +13,27 @@ const PetList = ({ petType, apiUrl }) => {
   const [errorMessage, setErrorMessage] = useState('');
   const [open, setOpen] = useState(false);
   const [selectedPet, setSelectedPet] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(apiUrl, {
-          method: 'GET',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        });
-
+        // Use the proxied URL here instead of the full URL (e.g., '/api/v1/cats')
+        const response = await fetch(apiUrl);  // This uses the proxy from vite.config.js
         if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status} - ${response.statusText}`);
+          throw new Error('Failed to fetch');
         }
-
         const data = await response.json();
-        console.log('API Response:', data);
-
-        if (Array.isArray(data)) {
-          setPets(data);
-        } else if (data[petType] && Array.isArray(data[petType])) {
-          setPets(data[petType]);
-        } else {
-          throw new Error('Unexpected data format from API.');
-        }
+        setPets(data);
       } catch (error) {
-        console.error('Error fetching pet data:', error);
-        setErrorMessage('Failed to load pet data. Please try again later.');
+        setErrorMessage('Error fetching data');
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchData();
-  }, [apiUrl, petType]);
+  }, [apiUrl]); // apiUrl dependency ensures this effect runs when apiUrl changes
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
@@ -69,7 +57,9 @@ const PetList = ({ petType, apiUrl }) => {
     <div>
       <Header searchTerm={searchTerm} onSearchChange={handleSearchChange} />
       <div id="pet-container">
-        {errorMessage ? (
+        {loading ? (
+          <p>Loading...</p>
+        ) : errorMessage ? (
           <p className="error-message">{errorMessage}</p>
         ) : filteredPets.length > 0 ? (
           filteredPets.map((pet) => (

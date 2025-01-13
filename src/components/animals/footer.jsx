@@ -4,7 +4,7 @@ import "./animals.css";
 const Footer = () => {
   return (
     <footer>
-      <p style={{ textAlign: 'center' }}>© 2024 Pawsome Shop. All rights reserved.</p>
+      <p style={{ textAlign: 'center'}}>© 2024 Pawsome Shop. All rights reserved.</p>
     </footer>
   );
 }

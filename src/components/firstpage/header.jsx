@@ -18,7 +18,7 @@ const Header = () => {
               <Link to="/pet-list/cats">Cats</Link>
               <Link to="/pet-list/dogs">Dogs</Link>
               <Link to="/pet-list/birds">Birds</Link>
-            </div>
+            </div>      
           </li> 
         </ul>
       </nav>

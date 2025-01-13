@@ -15,7 +15,7 @@ function App() {
       
           <Route path="/pet-list/cats" element={<PetList petType="cats" apiUrl="https://freetestapi.com/api/v1/cats" />} />
           <Route path="/pet-list/dogs" element={<PetList petType="dogs" apiUrl="https://freetestapi.com/api/v1/dogs" />} />
-          <Route path="/pet-list/birds" element={<PetList petType="birds" apiUrl="https://freetestapi.com/api/v1/birds" />} />
+          <Route path="/pet-list/birds" element={<PetList petType="birds" apiUrl="https://freetestapi.com/api/v1/birds"/>} />
         </Routes>
       </Router>
     );

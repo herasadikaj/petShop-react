@@ -152,7 +152,7 @@ html, body {
 }
 
 footer {
-    width: 100%; 
+    width: 100%; /* Matches the width of the navbar and header */
     background-color: rgb(110, 107, 107);
     padding: 10px; 
     display: flex;
@@ -160,13 +160,9 @@ footer {
     align-items: center;
     text-align: center;
     color: white;
-    position: relative; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
     user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
+    position: relative; /* Ensures it behaves like other sections unless explicitly changed */
 }
 
 @media (max-width: 991px) {
