@@ -265,28 +265,28 @@ footer {
     box-sizing: border-box; 
 }
 
-/* Media Queries for responsiveness */
+
 @media (max-width: 991px) {
     html {
         font-size: 55%;
     }
 
     .navbar ul {
-        flex-direction: row; /* Ensure items are in a single row */
-        justify-content: space-between; /* Distribute space evenly between navbar items */
-        width: 100%; /* Full width for navbar */
+        flex-direction: row; 
+        justify-content: space-between; 
+        width: 100%; 
     }
 
     .navbar ul li {
-        margin: 0 10px; /* Reduced margin between navbar items */
+        margin: 0 10px;
     }
 
     .navbar ul li a {
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 16px; 
     }
 
     .header {
-        height: 500px; /* Adjust header height for smaller screens */
+        height: 500px; 
     }
 
     .kafshet-container {
@@ -315,20 +315,20 @@ footer {
     }
 
     .navbar ul {
-        flex-direction: row; /* Maintain horizontal alignment */
-        justify-content: space-between; /* Evenly space navbar items */
+        flex-direction: row; 
+        justify-content: space-between; 
     }
 
     .navbar ul li {
-        margin: 0 5px; /* Smaller margin for tighter spacing */
+        margin: 0 5px; 
     }
 
     .navbar ul li a {
-        font-size: 14px; /* Further reduce font size for very small screens */
+        font-size: 14px; 
     }
 
     .header {
-        height: 350px; /* Further reduce height for very small screens */
+        height: 350px; 
     }
 
     .kafshet-container {
@@ -360,11 +360,11 @@ footer {
 .header {
     background-image: url('C:\Users\CRS\Desktop\my-react-app\src\imazhe\animals.png');
     background-color: white;
-    background-size: cover; /* Ensures the image covers the entire header */
-    background-position: center; /* Keeps the image centered */
-    background-repeat: no-repeat; /* Prevents repeating of the image */
-    background-attachment: scroll; /* Changes fixed background to scroll on mobile */
-    height: 730px; /* Default height */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 730px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -373,17 +373,17 @@ footer {
     z-index: 1;
 }
 
-/* Responsive adjustments for small screens */
+
 @media (max-width: 991px) {
     .header {
-        height: 500px; /* Adjust header height for smaller screens */
-        background-size: cover; /* Ensures background image still covers */
+        height: 500px; 
+        background-size: cover;
     }
 }
 
 @media (max-width: 450px) {
     .header {
-        height: 350px; /* Further reduce height for very small screens */
-        background-size: cover; /* Keeps background image covering */
+        height: 350px; 
+        background-size: cover; 
     }
 }

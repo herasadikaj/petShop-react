@@ -18,8 +18,8 @@ const PetList = ({ petType, apiUrl }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Use the proxied URL here instead of the full URL (e.g., '/api/v1/cats')
-        const response = await fetch(apiUrl);  // This uses the proxy from vite.config.js
+ 
+        const response = await fetch(apiUrl);  
         if (!response.ok) {
           throw new Error('Failed to fetch');
         }
@@ -33,7 +33,7 @@ const PetList = ({ petType, apiUrl }) => {
     };
 
     fetchData();
-  }, [apiUrl]); // apiUrl dependency ensures this effect runs when apiUrl changes
+  }, [apiUrl]); 
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
